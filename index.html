@@ -102,28 +102,27 @@
 <!-- JavaScript code to handle button click -->
  <button id="superShyButton">Super Shy(title)</button>
 
-    <!-- JavaScript code -->
-    <script>
-        document.getElementById("superShyButton").addEventListener("click", function() {
-            // 클릭 시 백엔드로 요청을 보냅니다.
-            fetch('https://db.seunghobet.link/api/super-shy') // 백엔드 엔드포인트로 변경
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    // 요청이 성공한 경우 새로운 URL로 이동합니다.
-                    window.location.href = "https://db.seunghobet.link";
-                })
-                .catch(error => {
-                    // 오류 처리
-                    console.error('Error:', error);
-                    // 요청이 실패하더라도 아무 작업도 수행하지 않습니다.
-                });
-        });
-    </script>
+ <!-- JavaScript code -->
+<script>
+    document.getElementById("superShyButton").addEventListener("click", function() {
+        // 클릭 시 백엔드로 요청을 보냅니다.
+        fetch('https://www.seunghobet.link/api/super-shy') // 백엔드 프록시 경로로 변경
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                // 요청이 성공한 경우 새로운 URL로 이동합니다.
+                window.location.href = "https://www.seunghobet.link"; // 백엔드 프록시 경로로 변경
+            })
+            .catch(error => {
+                // 오류 처리
+                console.error('Error:', error);
+                // 요청이 실패하더라도 아무 작업도 수행하지 않습니다.
+            });
+    });
+</script>
 </body>
 </html>
-
 
 
 
