@@ -18,5 +18,5 @@ COPY resume.html /usr/share/nginx/html/resume.html
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # 컨테이너 실행 시 Nginx 자동 시작
-CMD ["nginx", "-g", "daemon off;", "-p", "8080:8080"]
+ CMD ["nginx", "-g", "daemon off;"]
 
